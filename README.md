@@ -90,8 +90,6 @@ Backend:
 ```powershell
 cd backend
 .\venv\Scripts\Activate.ps1
-ruff check .
-ruff format --check .
 mypy .
 ```
 

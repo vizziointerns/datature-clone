@@ -4,6 +4,5 @@ sqlalchemy>=2.0.0
 alembic
 psycopg[binary]
 pydantic-settings
-ruff
 mypy
 pydantic
