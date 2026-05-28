@@ -7,11 +7,9 @@ repos:
       - id: check-yaml
       - id: check-added-large-files
 
-  - repo: local
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.14
     hooks:
-      - id: backend-ruff
-        name: Backend Ruff
-        entry: bash -c 'cd backend && ruff check .'
-        language: system
+      - id: ruff
+        args: ["--fix", "--config", "backend/ruff.toml", "backend"]
         pass_filenames: false
-        files: ^backend/
